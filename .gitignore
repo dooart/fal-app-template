@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python build artifacts
+*.egg-info/
+*.egg
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Generated version file
+_version.py 
+
+temp
+outputs

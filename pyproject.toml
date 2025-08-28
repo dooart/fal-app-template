@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "_version.py"
+fallback_version = "0.0.0"
+
+[project]
+name = "app"
+dynamic = ["version"]
+description = "Depth estimation for video"
+readme = "README.md"
+dependencies = [
+    # Core dependencies
+    "pydantic>=2.0.0",
+    "fal @ git+https://github.com/fal-ai/fal.git#subdirectory=projects/fal",
+]
+
+[tool.fal.apps]
+put-your-app-id-here = { auth = "private", ref = "app/fal_app.py::FalApp" } 
